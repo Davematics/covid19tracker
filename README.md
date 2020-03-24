@@ -8,8 +8,8 @@ Infodemics, as a risk communication platform hopes that [this tracker](https://i
 
 ## What the tracker does
 
-* [The Public](repo/blob/master/img/covid19tracker-user-germinal.gif)
-* [Health Agencies](repo/blob/master/img/covid19tracker-admin.gif)
+* [The Public](/img/covid19tracker-user-germinal.gif)
+* [Health Agencies](/img/covid19tracker-admin.gif)
 
 ## The Tracker API
 
@@ -32,7 +32,7 @@ Names are from the project [stigwue/naija_pikin](https://github.com/stigwue/naij
 ### Submit tracker data (media/covid19_submit)
 Submit the provided user data to the tracker so that information can be handled at the backend by CDC.
 
-See details in this [image](repo/blob/master/img/covid19_submit.png).
+See details in this [image](/img/covid19_submit.png).
 
 
 ## Request For Comments (wow, I feel so old using RFC!)
