@@ -134,7 +134,7 @@
 						}
 					]
 				},
-				"description": "The tracker needs users to fill certain details. This request help with some random fillers for people who wish to be anonymous.\n\nPhone number must be provided later though.\n\nPlease note that suggested names are of the form <Adjective> <Nigerian noun>. And <Adjective> might not be flattering. For example, we have seen suggestions of \"Japanese\", \"Germinal\" or even the example below!\n\nNames are from https://github.com/stigwue/naija_pikin."
+				"description": "The tracker needs users to fill certain details. This request help with some random fillers for people who wish to be anonymous.\n\nPhone number must be provided later though.\n\nPlease note that suggested names are of the form \"adjective\"+\"nigerian noun\". And \"adjective\" might not be flattering. For example, we have seen suggestions of \"Japanese\", \"Germinal\" or even the example below!\n\nNames are from https://github.com/stigwue/naija_pikin."
 			},
 			"response": [
 				{
