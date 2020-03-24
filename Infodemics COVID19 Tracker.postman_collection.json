@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "21048ec7-2f42-4709-86ca-0ac15aa4c4fd",
+		"name": "Infodemics COVID19 Tracker",
+		"description": "See infodemics.com/covid19tracker\n\nAlso infodemics.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get tracker data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{infodemics_url}}/circle/covid19_tracker",
+					"host": [
+						"{{infodemics_url}}"
+					],
+					"path": [
+						"circle",
+						"covid19_tracker"
+					]
+				},
+				"description": "Display existing tracker data.\n\nNote that this has the potential to be bulky (locations especially) and will also have to be obfuscated/censored (locations too)."
+			},
+			"response": [
+				{
+					"name": "Display tracker data",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{infodemics_url}}/circle/covid19_tracker",
+							"host": [
+								"{{infodemics_url}}"
+							],
+							"path": [
+								"circle",
+								"covid19_tracker"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 10:38:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=i840r8mul7j0q31ppp33fvq27m; path=/"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "86400"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1664"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"message\": \"\",\n    \"data\": {\n        \"_id\": \"5e7706be6cf1160dfe07cdab\",\n        \"title\": \"covid-19-tracker\",\n        \"upload_id\": \"-\",\n        \"status\": \"active\",\n        \"created\": 1584858814,\n        \"locations\": [\n            {\n                \"_id\": \"5e78d20d6cf11603257f42f6\",\n                \"title\": \"GT Bank\",\n                \"description\": \"No 30 Opebi rd, Opebi, Ikeja\",\n                \"latitude\": 6.582664989998798,\n                \"longitude\": 3.4551732343750174,\n                \"tag\": \"covid19tracker\",\n                \"status\": \"active\",\n                \"profile_id\": \"5e78d20d6cf11603257f42cb\",\n                \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                \"created\": 1584976397\n            },\n            {\n                \"_id\": \"5e78e48e6cf116035379f751\",\n                \"title\": \"bannex\",\n                \"description\": \"abuja\",\n                \"latitude\": 9.083992391872851,\n                \"longitude\": 7.468916634948748,\n                \"tag\": \"covid19tracker\",\n                \"status\": \"active\",\n                \"profile_id\": \"5e78e48e6cf116035379f721\",\n                \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                \"created\": 1584981134\n            }\n        ],\n        \"children\": [\n            {\n                \"_id\": \"5e77078e6cf1160dfe07cdb0\",\n                \"parent\": \"5e7706be6cf1160dfe07cdab\",\n                \"child\": \"5e77078b6cf11608fe6d7923\",\n                \"status\": \"active\",\n                \"created\": 1584859022,\n                \"circle\": {\n                    \"_id\": \"5e77078b6cf11608fe6d7923\",\n                    \"title\": \"Request a COVID-19 Test\",\n                    \"upload_id\": \"-\",\n                    \"status\": \"active\",\n                    \"created\": 1584859019,\n                    \"modified\": 1584918804\n                },\n                \"member_count\": {\n                    \"happrox\": \"5\",\n                    \"value\": 5,\n                    \"same\": true\n                },\n                \"flags\": [],\n                \"identities\": [\n                    {\n                        \"_id\": \"5e788d166cf11603257f36ef\",\n                        \"title\": \"Are you a Health Care worker?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958742\n                    },\n                    {\n                        \"_id\": \"5e788d346cf1160360388cf7\",\n                        \"title\": \"Have you been in contact with someone with COVID-19?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958772\n                    },\n                    {\n                        \"_id\": \"5e788daf6cf11603257f36f4\",\n                        \"title\": \"Have you travelled (from abroad) recently?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958895\n                    },\n                    {\n                        \"_id\": \"5e788db96cf1160360388cfc\",\n                        \"title\": \"Do you have a cough?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958905\n                    },\n                    {\n                        \"_id\": \"5e788dc36cf116034b26175f\",\n                        \"title\": \"Do you have a fever?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958915\n                    },\n                    {\n                        \"_id\": \"5e788dcf6cf11603506c409a\",\n                        \"title\": \"Do you have difficulty breathing?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958927\n                    },\n                    {\n                        \"_id\": \"5e788de46cf116035600ed53\",\n                        \"title\": \"Have you been experiencing tiredness?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584958948\n                    },\n                    {\n                        \"_id\": \"5e788fe36cf1160882725a71\",\n                        \"title\": \"Do you have Diarrhoea?\",\n                        \"status\": \"active\",\n                        \"circle_id\": \"5e77078b6cf11608fe6d7923\",\n                        \"created\": 1584959459\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get suggested profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{infodemics_url}}/profile/suggest?meta=some_meta",
+					"host": [
+						"{{infodemics_url}}"
+					],
+					"path": [
+						"profile",
+						"suggest"
+					],
+					"query": [
+						{
+							"key": "meta",
+							"value": "some_meta"
+						}
+					]
+				},
+				"description": "The tracker needs users to fill certain details. This request help with some random fillers for people who wish to be anonymous.\n\nPhone number must be provided later though.\n\nPlease note that suggested names are of the form <Adjective> <Nigerian noun>. And <Adjective> might not be flattering. For example, we have seen suggestions of \"Japanese\", \"Germinal\" or even the example below!\n\nNames are from https://github.com/stigwue/naija_pikin."
+			},
+			"response": [
+				{
+					"name": "Get suggested profile (fail)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{infodemics_url}}/profile/suggest",
+							"host": [
+								"{{infodemics_url}}"
+							],
+							"path": [
+								"profile",
+								"suggest"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"code\":400,\"message\":\"'meta' parameter missing or of wrong type.\"}"
+				},
+				{
+					"name": "Get suggested profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{infodemics_url}}/profile/suggest?meta=some_meta",
+							"host": [
+								"{{infodemics_url}}"
+							],
+							"path": [
+								"profile",
+								"suggest"
+							],
+							"query": [
+								{
+									"key": "meta",
+									"value": "some_meta"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 24 Mar 2020 10:44:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.29 (Ubuntu)"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true"
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "86400"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Length",
+							"value": "107"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"name\":\"Queerer Yusuf\",\"email\":\"queerer.yusuf@anon.infodemics.com\",\"upload_id\":\"-\",\"status\":\"active\"}"
+				}
+			]
+		},
+		{
+			"name": "Submit tracker data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "circle_id",
+							"value": "",
+							"description": "Look at tracker data children and provide the value of circle._id.",
+							"type": "text"
+						},
+						{
+							"key": "identity_id[]",
+							"value": "",
+							"description": "This is the ID of one question the user is answering (called internally \"identity\"). You will have several instance of this: one per question.",
+							"type": "text"
+						},
+						{
+							"key": "identity_value[]",
+							"value": "A user answer",
+							"description": "This is the answer of one the question the user has provided. You will have several instance of this: one per question. Note that an error will happen",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "",
+							"description": "User phone number. Fill fail if empty or already used. Valid format is +2348025336506.\nValid email. Okay to use the suggested non existent one.",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "upload_id",
+							"value": "-",
+							"description": "Ignore. Used internally to track user image.",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"description": "User will have an active profile created for further follow ups.",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"description": "Address landmark",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"description": "Actual address down to house number",
+							"type": "text"
+						},
+						{
+							"key": "latitude",
+							"value": "",
+							"description": "Latitude... I'm sure you went to school.",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "",
+							"description": "Longitude, the other location coordinate pair. Please don't mix them up.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{infodemics_url}}/media/covid19_submit",
+					"host": [
+						"{{infodemics_url}}"
+					],
+					"path": [
+						"media",
+						"covid19_submit"
+					]
+				},
+				"description": "Submit the provided user data to the tracker so that information can be handled at the backend by CDC."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
