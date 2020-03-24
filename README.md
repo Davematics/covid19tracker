@@ -13,7 +13,11 @@ Infodemics, as a risk communication platform hopes that [this tracker](https://i
 
 ## The Tracker API
 
-We have included the Postman collection [here](Infodemics-COVID19-Tracker.postman_collection.json). But just to give you a highlight:
+We have included the Postman collection [here](Infodemics-COVID19-Tracker.postman_collection.json). 
+
+Also, the test/dev Infodemics url is _https://test.infodemics.com_, please contact us when you need to publish your solution.
+
+But just to give you a highlight:
 
 ### Get tracker data (circle/covid19_tracker)
 Read (and then display) existing tracker data.
